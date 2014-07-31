@@ -20,20 +20,18 @@
           <div class="inner">
             <h3 class="masthead-brand">Sounds Button</h3>
             <ul class="nav masthead-nav">
-              <li ng-click="td4w()">TD4W</li>
-              <li ng-click="the300()">300</li>
-              <li ng-click="bsg()">BSG</li>
-              <li ng-click="nemo()">Nemo</li>
-              <li ng-click="portal2()">Portal</li>
+              <select ng-model="myAudio" ng-options="a.name for a in audio">
+                <option value="TD4W"/option>
+              </select>
             </ul>
           </div>
         </div>
         <div class="inner cover">
-          <button class="btn btn-lg btn-primary" ng-click="play()">PRESS</button>
+          <button class="btn btn-lg btn-primary" ng-click="play(myAudio)">PRESS</button>
         </div>
         <div class="mastfoot">
           <div class="inner">
-            <p>Created By: <a href="#">Ian Goldfarb</a></p>
+            <p>Created By: <a href="https://github.com/Superman2971">Ian Goldfarb</a></p>
           </div>
         </div>
       </div>
