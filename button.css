@@ -24,6 +24,18 @@ a:active {
   border: 1px solid #fff;
 }
 
+/* Custom Select Tag */
+.styled-select {
+   padding: 5px;
+   color: black;
+   font-size: 20px;
+   line-height: 1;
+   border: 1px solid black;
+   border-radius: 15%;
+   }
+ul {
+  margin: 10px 0;
+}
 
 /*
  * Base structure
